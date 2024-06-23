@@ -6,53 +6,53 @@
         type="text"
         class="p-2 border border-gray-300 rounded"
         placeholder="FirstName"
-        formControlName="FirstName"
+        formControlName="firstName"
       />
-      <span *ngIf ="register.hasError('required','FirstName') && register.controls['FirstName'].dirty" class="text-red-600">*FirstName Is Required</span>
+      <span *ngIf ="register.hasError('required','firstName') && register.controls['firstName'].dirty" class="text-red-600">*FirstName Is Required</span>
     </div>
     <div class="flex flex-col mt-4 mb-1">
       <input
-      formControlName="LastName"
+      formControlName="lastName"
         type="text"
         class="p-2 border border-gray-300 rounded"
-        placeholder="LastName"
+        placeholder="lastName"
       />
-      <span *ngIf ="register.hasError('required','LastName') && register.controls['LastName'].dirty" class="text-red-600">*LastName Is Required</span>
+      <span *ngIf ="register.hasError('required','lastName') && register.controls['lastName'].dirty" class="text-red-600">*LastName Is Required</span>
     </div>
     <div class="flex flex-col mt-4 mb-1">
       <input
-      formControlName="UserName"
+      formControlName="username"
         type="text"
         class="p-2 border border-gray-300 rounded"
         placeholder="UserName"
       />
-      <span *ngIf ="register.hasError('required','UserName') && register.controls['UserName'].dirty" class="text-red-600">*UserName Is Required</span>
+      <span *ngIf ="register.hasError('required','username') && register.controls['username'].dirty" class="text-red-600">*UserName Is Required</span>
     </div>
     <div class="flex flex-col mt-4 mb-1">
       <input
-      formControlName="Email"
+      formControlName="email"
         type="email"
         class="p-2 border border-gray-300 rounded"
-        placeholder="Email"
+        placeholder="email"
       />
-      <span  *ngIf ="register.hasError('required','Email') && register.controls['Email'].dirty"class="text-red-600">*Email Is Required</span>
-      <span  *ngIf ="register.hasError('email','Email') && register.controls['Email'].dirty"class="text-red-600">*Not a valid Email</span>
+      <span  *ngIf ="register.hasError('required','email') && register.controls['email'].dirty"class="text-red-600">*Email Is Required</span>
+      <span  *ngIf ="register.hasError('email','email') && register.controls['email'].dirty"class="text-red-600">*Not a valid Email</span>
     </div>
     <div class="flex flex-col mt-4 mb-1">
       <input
-      formControlName="Password"
+      formControlName="password"
         type="text"
         class="p-2 border border-gray-300 rounded"
         placeholder="Password"
       />
-      <span *ngIf ="register.hasError('required','Password') && register.controls['Password'].dirty" class="text-red-600">*Password Is Required</span>
+      <span *ngIf ="register.hasError('required','password') && register.controls['password'].dirty" class="text-red-600">*Password Is Required</span>
     </div>
-    <div class="flex flex-col mt-4 mb-1">
+   <div class="flex flex-col mt-4 mb-1"> 
       <input
-      formControlName="ConfirmPassword"
+      formControlName="confirmpassword"
              type="text"
         class="p-2 border border-gray-300 rounded"
-        placeholder="ConfirmPassword"
+        placeholder="confirmpassword"
       />
       <span *ngIf ="register.hasError('required','ConfirmPassword') && register.controls['ConfirmPassword'].dirty" class="text-red-600">*ConfirmPassword Is Required</span>
     </div>
